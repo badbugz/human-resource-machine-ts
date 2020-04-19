@@ -1,4 +1,4 @@
-# Human Resource Tester
+# Human Resource Machine TS
 
 Solve (the first 16) puzzles from Human Resource Machine using TypeScript and continuous testing.
 
