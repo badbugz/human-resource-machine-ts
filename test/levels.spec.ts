@@ -19,7 +19,7 @@ describe('Human Resource Machine Tests', () => {
     });
     describe('Level 2: Busy Mail Room', () => {
         it('Grab each thing from the inbox, and drop each one into the outbox.', () => {
-            const inbox: Inbox = [5 - 1, -9, 0, 8, 4, -3];
+            const inbox: Inbox = [5, 1, 9, 0, 8, 4, 3];
             expect(Solutions.Level2(inbox)).to.deep.equal([5, 1, 9, 0, 8, 4, 3]);
         });
     });
