@@ -20,7 +20,15 @@ describe('Human Resource Machine Tests', () => {
     describe('Level 2: Busy Mail Room', () => {
         it('Grab each thing from the inbox, and drop each one into the outbox.', () => {
             const inbox: Inbox = [5, 1, 9, 0, 8, 4, 3];
-            expect(Solutions.Level2(inbox)).to.deep.equal([5, 1, 9, 0, 8, 4, 3]);
+            expect(Solutions.Level2(inbox)).to.deep.equal([
+                5,
+                1,
+                9,
+                0,
+                8,
+                4,
+                3,
+            ]);
         });
     });
     describe('Level 3: Copy Floor', () => {
@@ -32,7 +40,16 @@ describe('Human Resource Machine Tests', () => {
     describe('Level 4: Scrambler Handler', () => {
         it(' Grab the first TWO things from the inbox and drop them into the outbox in the reverse order. Repeat until the inbox is empty.', () => {
             const inbox: Inbox = [1, 2, 3, 4, 5, 6, 7, 8];
-            expect(Solutions.Level4(inbox)).to.deep.equal([2, 1, 4, 3, 5, 6, 8, 7]);
+            expect(Solutions.Level4(inbox)).to.deep.equal([
+                2,
+                1,
+                4,
+                3,
+                6,
+                5,
+                8,
+                7,
+            ]);
         });
     });
     describe('Level 5: Coffee Break', () => {
@@ -53,13 +70,20 @@ describe('Human Resource Machine Tests', () => {
     describe('Level 8: Tripler Room', () => {
         it('For each thing in the inbox, triple it. And outbox the result.', () => {
             const inbox: Inbox = [1, 2, 3, 4, 5, 6];
-            expect(Solutions.Level8(inbox)).to.deep.equal([3, 6, 9, 12, 15, 18]);
+            expect(Solutions.Level8(inbox)).to.deep.equal([
+                3,
+                6,
+                9,
+                12,
+                15,
+                18,
+            ]);
         });
     });
     describe('Level 9: Zero Preservation Initiative', () => {
         it('Send only the ZEROS to the OUTBOX.', () => {
             const inbox: Inbox = [0, 2, 3, 0, 0, 0, 7, 8];
-            expect(Solutions.Level8(inbox)).to.deep.equal([0, 0, 0, 0]);
+            expect(Solutions.Level9(inbox)).to.deep.equal([0, 0, 0, 0]);
         });
     });
     describe('Level 10: Octoplier Suite', () => {
@@ -90,14 +114,14 @@ describe('Human Resource Machine Tests', () => {
             ]);
         });
     });
-    describe('Level 13: Deep.Equalization Room', () => {
-        it('Get two things from the inbox. If they are deep.equal, put one of them in the outbox. Discard not-deep.equal pairs. Repeat!', () => {
+    describe('Level 13: Equalization Room', () => {
+        it('Get two things from the inbox. If they are equal, put one of them in the outbox. Discard not-equal pairs. Repeat!', () => {
             const inbox: Inbox = [1, 1, 5, 1, 0, 0, 4, 3, 1, 0, 8, 8];
             expect(Solutions.Level13(inbox)).to.deep.equal([1, 0, 8]);
         });
     });
     describe('Level 14: Maximization Room', () => {
-        it('Grab TWO things from the inbox, and put only the bigger of the two in the outbox. If they are deep.equal, just pick either one. Repeat!', () => {
+        it('Grab TWO things from the inbox, and put only the bigger of the two in the outbox. If they are equal, just pick either one. Repeat!', () => {
             const inbox: Inbox = [1, 1, 5, 1, 0, 0, 4, 3, 1, 0, 8, 8];
             expect(Solutions.Level14(inbox)).to.deep.equal([1, 5, 0, 4, 1, 8]);
         });
@@ -108,7 +132,15 @@ describe('Human Resource Machine Tests', () => {
     describe('Level 16: Absolute Positivity', () => {
         it('Send each thing from the inbox to the outbox. But, if a number is negative, first remove its negative sign', () => {
             const inbox: Inbox = [5, -1, -9, 0, 8, 4, -3];
-            expect(Solutions.Level16(inbox)).to.deep.equal([5, 1, 9, 0, 8, 4, 3]);
+            expect(Solutions.Level16(inbox)).to.deep.equal([
+                5,
+                1,
+                9,
+                0,
+                8,
+                4,
+                3,
+            ]);
         });
     });
     describe('Level 17: Exclusive Lounge', () => {

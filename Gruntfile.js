@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         },
         watch: {
             files: ['<%= files.tests %>', '<%= files.solutions %>'],
-            tasks: ['exec:test'],
+            tasks: ['test'],
             options: {
                 atBegin: true,
             },
