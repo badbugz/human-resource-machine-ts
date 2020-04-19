@@ -2,6 +2,11 @@
 
 Solve (the first 16) puzzles from Human Resource Machine using TypeScript and continuous testing.
 
+# Requirements
+
+1) Node.js installed
+2) A text editor/IDE
+
 # Setup
 
 1) Clone the repository
